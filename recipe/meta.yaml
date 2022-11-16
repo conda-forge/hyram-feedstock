@@ -16,13 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.6,<3.9
+    - python >3.6,<3.11
     - pip
   run:
-    - python >=3.6,<3.9
+    - python >3.6,<3.11
     - matplotlib-base
     - scipy
-    - pythonnet
     - coolprop >=6.3
     - numpy
 
