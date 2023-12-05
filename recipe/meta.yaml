@@ -38,7 +38,7 @@ about:
   summary: Hydrogen Plus Other Alternative Fuels Risk Assessment Models Python Package
   license: GPL-3.0-only
   license_file:
-    - hyram.egg-info/COPYING.txt
+    - COPYING.txt
 
 extra:
   recipe-maintainers:
