@@ -1,5 +1,5 @@
 {% set name = "hyram" %}
-{% set version = "5.0.0" %}
+{% set version = "5.1.0.post1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hyram-{{ version }}.tar.gz
-  sha256: 361faa184da3c4d71d818ed9c728720be29f4835ba0eff9faa550d7d97a89b2f
+  sha256: b421dad2136eb873769a99190148df057a48dbfbd47c20ced9ade824f07165bf
 
 build:
   noarch: python
@@ -38,7 +38,7 @@ about:
   summary: Hydrogen Plus Other Alternative Fuels Risk Assessment Models Python Package
   license: GPL-3.0-only
   license_file:
-    - hyram.egg-info/COPYING.txt
+    - COPYING.txt
 
 extra:
   recipe-maintainers:
