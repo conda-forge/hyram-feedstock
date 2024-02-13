@@ -1,5 +1,5 @@
 {% set name = "hyram" %}
-{% set version = "5.1.0.post1" %}
+{% set version = "5.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hyram-{{ version }}.tar.gz
-  sha256: b421dad2136eb873769a99190148df057a48dbfbd47c20ced9ade824f07165bf
+  sha256: 2865f9acb3d6a5eaa549f48f2b50db16e680c5a714bcad51bf4117da10a1e215
 
 build:
   noarch: python
