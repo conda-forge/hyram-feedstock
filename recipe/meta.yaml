@@ -1,13 +1,13 @@
 {% set name = "hyram" %}
-{% set version = "5.1.1" %}
+{% set version = "6.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hyram-{{ version }}.tar.gz
-  sha256: 2865f9acb3d6a5eaa549f48f2b50db16e680c5a714bcad51bf4117da10a1e215
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/hyram-{{ version }}.tar.gz
+  sha256: 170d9cd60c0d049b153f1d61de37e334f205ed78c449985ed90c238484c7550b
 
 build:
   noarch: python
@@ -16,10 +16,11 @@ build:
 
 requirements:
   host:
-    - python >3.6,<3.11
+    - python {{ python_min }}
     - pip
+    - setuptools
   run:
-    - python >3.6,<3.11
+    - python >={{ python_min }}
     - matplotlib-base
     - scipy
     - coolprop >=6.3
@@ -31,6 +32,7 @@ test:
   commands:
     - pip check
   requires:
+    - python {{ python_min }}
     - pip
 
 about:
